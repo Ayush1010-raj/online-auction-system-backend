@@ -1,0 +1,105 @@
+
+# ==========================================
+# Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+*.env
+
+# ==========================================
+# Spring Boot configuration containing secrets
+# ==========================================
+**/src/main/resources/application.properties
+**/src/main/resources/application.yml
+**/src/main/resources/application.yaml
+**/src/main/resources/bootstrap.properties
+**/src/main/resources/bootstrap.yml
+**/src/main/resources/bootstrap.yaml
+
+# Keep safe example configuration templates
+!**/src/main/resources/application.example.properties
+!**/src/main/resources/application.example.yml
+!**/src/main/resources/application.example.yaml
+
+# Local-only configuration
+application-local.properties
+application-local.yml
+application-local.yaml
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+
+# ==========================================
+# Maven build output
+# ==========================================
+**/target/
+target/
+**/build/
+**/.gradle/
+
+# Maven wrapper
+!mvnw
+!mvnw.cmd
+!.mvn/
+!.mvn/wrapper/
+!.mvn/wrapper/maven-wrapper.properties
+!.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================
+# Logs and runtime output
+# ==========================================
+*.log
+logs/
+**/logs/
+
+# ==========================================
+# IntelliJ IDEA
+# ==========================================
+.idea/
+**/.idea/
+*.iml
+*.iws
+*.ipr
+
+# ==========================================
+# Eclipse / Spring Tool Suite
+# ==========================================
+.classpath
+.project
+.settings/
+**/.classpath
+**/.project
+**/.settings/
+
+# ==========================================
+# Java compiled files and packages
+# ==========================================
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================================
+# Operating system files
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Temporary and editor files
+# ==========================================
+*.tmp
+*.swp
+*.swo
+*~
+.vscode/
+
+# ==========================================
+# Miscellaneous
+# ==========================================
+HELP.md
+# Ignore all Markdown files except the root README
+*.md
+!README.md
